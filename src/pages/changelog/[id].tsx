@@ -47,7 +47,10 @@ const Changelog = ({ data, blocks }: ChangelogProps) => (
         {data.properties.Tags.multi_select.map(({ color, name }, index) => (
           <div
             key={index}
-            className={`bg-${color}-400 text-xs px-1 py-1 rounded-3xl text-white w-24 text-center mr-2`}
+            className="text-xs px-1 py-1 rounded-3xl text-white w-24 text-center mr-2"
+            style={{
+              backgroundColor: color,
+            }}
           >
             {name}
           </div>
